@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    margin: 0;
+    display: 0;
+    flex-direction: column;
+    height: 100vh;
+}
+.header{
+    height: 50px;
+    background-color: blue;
+}
+
+/* *************** SLIDERS *************** */
+.slider{
+    flex: 1;
+    overflow: hidden; /*Corta as partes excedentes da imagem em vez de colocar barra de rolagem*/
+}
+.slider--width{
+    height: 100%;
+    display: flex;
+    width: calc(100vw * 3) /*Largura da tela multiplicado pela quantidade de fotos que têm no slide*/
+}
+.slider--img{
+    width: 100vw;
+    height: inherit; /* Herda a altura do elemento pai */
+}
