@@ -29,9 +29,37 @@ header{
 .slider--width{
     height: 100%;
     display: flex;
-    width: calc(100vw * 3) /*Largura da tela multiplicado pela quantidade de fotos que têm no slide*/
+    
+    /* margin-left: ; */
+    transition: all ease 1s; /*Efeito de slide*/
 }
 .slider--img{
     width: 100vw;
-    height: inherit; /* Herda a altura do elemento pai */
+    height: calc(100vh - 50px); /* Herda a altura do elemento pai */
+    background-position: center;
+    background-size: cover; /*A imagem vai diminuir ou aumentar para se ajustar ao tamanho da tela*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 80px;
+    text-shadow: 0px 1px 1px #333;
+}
+
+.slider--controls{
+    position: absolute;
+    z-index: 99;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider--control{
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    overflow: hidden; /*Texto não ultrapassa os limites das bordas*/
+    cursor: pointer;
 }
