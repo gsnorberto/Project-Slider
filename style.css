@@ -16,7 +16,7 @@ header{
     flex-direction: column;
     height: 100vh;
 }
-.header{
+.top-menu{
     height: 50px;
     background-color: blue;
 }
@@ -49,7 +49,7 @@ header{
 
 .slider--controls{
     position: absolute;
-    z-index: 99;
+    z-index: 99; /*Garantir que a exibição dos controles estejam acima de outros elementos*/
     width:100%;
     display: flex;
     justify-content: space-between;
